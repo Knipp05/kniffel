@@ -1,0 +1,2 @@
+const diceInit = [{id: 1, value: 0, isHeld: false},{id: 2, value: 0, isHeld: false},{id: 3, value: 0, isHeld: false},{id: 4, value: 0, isHeld: false},{id: 5, value: 0, isHeld: false}]
+export default diceInit;

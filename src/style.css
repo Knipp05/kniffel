@@ -1,0 +1,197 @@
+.app {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.app--table {
+    display: table;
+    border: 2px solid black;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 226, 188);
+}
+.app--header-img {
+    width: 100%;
+    border-radius: 50%;
+    overflow-y: hidden;
+    margin-top: -26%;
+}
+.app--table tr {
+    display: table-cell;
+    width: 120px;
+}
+#app--table-overview td {
+    text-align: start;
+    display: flex;
+}
+.table--div-upgrade {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+.app--table tr td {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 14pt;
+    height: 35px;
+}
+.app--table-trenner {
+    border-top: 5px solid black;
+}
+.score--img {
+    width: 30px;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+.playerform {
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 500px;
+    padding: 1%;
+}
+.playerform form input {
+    height: 36px;
+    margin: 0;
+}
+.playerform--add {
+    margin-top: 2%;
+}
+
+.die {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: .2s ease-in;
+}
+.die--held {
+    background-color: rgb(3, 183, 3);
+    transition: .2s ease-in;
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%;
+}
+.playerSheet--contains {
+    background-color: rgb(210, 162, 17);
+    cursor: pointer;
+}
+.playerSheet--blocked {
+    background-color: red;
+    text-decoration-line: line-through;
+    cursor: default;
+
+}
+.playerSheet--nothing {
+    cursor: pointer;
+}
+.playerSheet--done {
+    background-color: rgb(12, 196, 12);
+    cursor:default ;
+}
+.app--game {
+    margin-left: 15%;
+}
+.scoreboard {
+    text-align: center;
+}
+#playerForm--input {
+    margin-right: 1%;
+    width: 160px;
+    margin-bottom: 20px;
+}
+.playerSheet--active {
+    background-color: rgb(72, 212, 255);
+}
+#app--finished {
+    text-align: center;
+    margin-top: 2%;
+}
+.game Button {
+    width: 12%;
+}
+@media only screen and (min-width: 0px) {
+    .app--header-img {border-radius: 50%;width: 700px; overflow-x: hidden; margin-left: -90%; margin-top: 20%; position: absolute;}
+    .app--header-img-hidden {border-radius:50%; width: 700px; overflow-x: hidden; margin-left: -185%; margin-top: 15%; position: absolute; transition: 1s ease;}
+    .game Button {width: 180px; height: 40px; margin-right: 30%; margin-bottom: 4%;}
+    .die {width: 50px; height: 50px; border-radius: 25px; margin-left: 0;margin-bottom: 5%;}
+    .die--held {width: 50px; height: 50px; border-radius: 20px; margin-left: 0;}
+    .app {width: 100%;height: 700px; overflow: hidden;}
+    .app--title {width: 200px; height: 200px;}
+    .app--table {width: 100%;}
+    #app--table-overview {
+        width: 200px;
+    }
+    .app--playerform {width: 200px;opacity: 1; position: absolute;}
+    .app--playerform-hidden {display: hidden;opacity: 0; transition: 0.3s linear; position: absolute; visibility: hidden;}
+    #playerform--start {
+        margin-left: 28%;
+    }
+    .scoreboard--hidden {
+        opacity: 0; position: absolute;
+        visibility: hidden;
+    }
+    .scoreboard--shown {opacity: 1; transition: .3s linear;}
+    .playerform--ul {
+        list-style-type: none;
+        margin-left: 40%;
+        width: 200px;
+        font-size: 16pt;
+    }
+}
+@media only screen and (min-width: 577px) {
+    .app--header-img {border-radius: 50%;width: 700px; overflow-x: hidden; margin-left: -40%; position: absolute;}
+    .app--header-img-hidden {border-radius:50%; width: 700px; overflow-x: hidden; margin-left: -185%; margin-top: 15%; position: absolute; transition: 1s ease;}
+    .game Button {width: 180px; height: 40px; margin-right: 30%; margin-bottom: 4%;}
+    .die {width: 50px; height: 50px; border-radius: 25px; margin-left: 0;margin-bottom: 5%;}
+    .die--held {width: 50px; height: 50px; border-radius: 20px; margin-left: 0;}
+    .app {width: 100%;height: 700px; overflow: hidden;}
+    .app--title {width: 200px; height: 200px;}
+    .app--table {width: 100%;}
+    #app--table-overview {
+        width: 200px;
+    }
+    .app--playerform {width: 200px;opacity: 1; position: absolute;}
+    .app--playerform-hidden {display: hidden;opacity: 0; transition: 0.3s linear; position: absolute; visibility: hidden;}
+    #playerform--start {
+        margin-left: 28%;
+    }
+    .scoreboard--hidden {
+        opacity: 0; position: absolute;
+        visibility: hidden;
+    }
+    .scoreboard--shown {opacity: 1; transition: .3s linear; height: 564px;}
+    .playerform--ul {
+        list-style-type: none;
+        margin-left: 40%;
+        width: 200px;
+        font-size: 16pt;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .app--header-img {border-radius: 50%; width: 46.2%; overflow-x: hidden; margin-left: -27%; margin-top: 0%;}
+    .app--header-img-hidden {border-radius: 50%;width: 46.2%; overflow-x: hidden; margin-left: -46.5%; margin-top: 0%; transition: .3s linear; position: absolute;}
+    .app {width: 100%;}
+    .app--table {width: 1000px;}
+    .game Button {width: 200px;}
+    .app--playerform {opacity: 1; position: absolute; margin-left: 10%;}
+    .app--playerform-hidden {opacity: 0; transition: 0.3s linear; position: absolute; visibility: hidden;}
+    .scoreboard--hidden {
+        opacity: 0; position: absolute;
+        visibility: hidden;
+    }
+    .scoreboard--shown {opacity: 1; transition: .5s linear;}
+    .playerform--ul {
+        list-style-type: none;
+    }
+}
