@@ -116,7 +116,7 @@ export default function ScoreBoard(props: any) {
               </td>
               <td>
                 <b>Kniffel</b>
-                {props.currentStatus.currentTurn === 0 &&
+                {/* {props.currentStatus.currentTurn === 0 &&
                   props.players[props.currentStatus.currentPlayer]
                     .points[11] === -1 && (
                     <div
@@ -125,7 +125,8 @@ export default function ScoreBoard(props: any) {
                     >
                       <CreateIcon />
                     </div>
-                  )}
+                  )} */}{" "}
+                {/* TODO: Modifikation für Kniffel implementieren! */}
                 <UpgradePopup
                   open={toggleUpgradeForms[2]}
                   handleToggleUpgradeForm={handleToggleUpgradeForms}

@@ -71,7 +71,7 @@ export default function PlayerForm(props: any) {
             }}
           >
             <PersonAddIcon />
-            weiter
+            hinzufügen
           </Button>
         </form>
       )}
